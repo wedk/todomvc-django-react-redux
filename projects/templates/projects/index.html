@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+  <script>
+    window.__PROJECTS_INITIAL_STATE__ = {{projects_initial_state|safe}};
+  </script>
+{% endblock content %}

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>todo • checklists</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'todomvc-app-css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css.c4009df4.css' %}">
+    <link rel="prefetch" href="{% static 'loading.gif' %}">
+  </head>
+  <body>
+    <div id="root"></div>
+    {% block content %}{% endblock content %}
+    <script src="https://fb.me/react-0.14.7.min.js"></script>
+    <script src="https://fb.me/react-dom-0.14.7.min.js"></script>
+    <script src="{% static 'js.40f50d8d.js' %}"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>todo • checklists</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'todomvc-app-css/index.css' %}">
+    <!-- build:process -->
+    <link rel="stylesheet" href="{% static '<%= css %>' %}">
+    <!-- /build -->
+    <link rel="prefetch" href="{% static 'loading.gif' %}">
+  </head>
+  <body>
+    <div id="root"></div>
+    {% block content %}{% endblock content %}
+    <!-- build:process -->
+    <%= cnd %><script src="{% static '<%= js %>' %}"></script>
+    <!-- /build -->
+  </body>
+</html>
